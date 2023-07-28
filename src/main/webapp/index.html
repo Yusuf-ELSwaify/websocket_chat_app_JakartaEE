@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html {
+            min-height: 100%;
+            display: grid;
+        }
+
+        body {
+            margin: auto;
+        }
+        .center-name{
+            border: 3px solid blue;
+            padding: 30px;
+            background-color: white;
+            justify-content: center;
+        }
+        .center-form{
+            display: flex;
+            margin: 40px 100px;
+        }
+        .image{
+            display: flex;
+            justify-content: start;
+            justify-self: start;
+            position: absolute;
+            margin: 40px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-name">
+        <strong>Login Page</strong>
+        <div class="image">
+
+            <img src="htmls/speech-bubble-chat-icon-sign-design-free-png.png" width="80" height="100" alt="">
+        </div>
+
+    <div class="center-form">
+        
+        <form action="/web_socket/chat.jsp">
+    
+            <label>Enter Your Namee:</label>
+    
+            <input type="text" name="name" placeholder="Enter Your Name">
+    
+            <br><br>
+    
+            <label>Choose Your Gender:</label>
+            <input type="radio" id="Male" name="gender" value="male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="female">
+            <label for="Female">Female</label><br>
+            <br><br>
+    
+            <input type="submit">
+
+        </form>
+    
+    </div>    </div>
+</body>
+</html>
